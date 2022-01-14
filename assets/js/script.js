@@ -21,3 +21,21 @@ window.addEventListener("scroll", function (event) {
     }
 })
 /*----------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------Border-Bottom-Animation--------------------------------------------------*/
+let technologyIcon = document.querySelectorAll('.technologySingle');
+let border = document.querySelectorAll('.borderBottomAnimation');
+
+for(let i = 0; i < technologyIcon.length; i++){
+    technologyIcon[i].addEventListener('mousemove', function(){
+        for(let j = 0; j < technologyIcon.length; j++){
+            border[j].style.width = '0';
+        }
+        border[i].style.width = '100%';
+    })
+    technologyIcon[i].addEventListener('mouseout', function(){
+        border[i].style.width = '0';
+    })
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+
