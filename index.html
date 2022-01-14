@@ -80,7 +80,7 @@
             <a href="#sobre" class="arrow"><i class="fas fa-chevron-down"></i></a>
         </section>
 
-        <section class="aboutMeSection">
+        <section id="sobre" class="aboutMeSection">
             <h2 class="sectionTitle">Sobre Mim</h2>
             <div class="boxAboutMe">
                 <img src="./assets/images/me2.png" alt="Desenvolvedor Web"/>
@@ -160,7 +160,7 @@
             </div>
         </section>
 
-        <section class="servicesSection">
+        <section id="serviços" class="servicesSection">
             <h2 class="sectionTitle">Meus Serviços</h2>
             <div class="boxServices">
                 <div class="serviceSingle">
@@ -201,7 +201,7 @@
             </div>
         </section>
 
-        <section class="portfolioSection">
+        <section  id="portifólio" class="portfolioSection">
             <h2 class="sectionTitle">Portfólio</h2>
             <div class="boxPortfolio">
                 <div class="portfolioSingle">
@@ -239,7 +239,7 @@
             </div>
         </section>
 
-        <section class="contactSection">
+        <section id="contato" class="contactSection">
             <h2 class="sectionTitle">Contato</h2>
 
 
@@ -282,12 +282,12 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact2">
+                <form class="contact2" method="POST" action="sendEmail.php">
                     <h3>Me envie uma mensagem:</h3>
-                    <input type="text" placeholder="Digite seu nome" />
-                    <input type="text" placeholder="Digite seu email" />
-                    <input type="text" placeholder="Qual o assunto" />
-                    <textarea placeholder="Mensagem"></textarea>
+                    <input required type="text" name="name" placeholder="Digite seu nome" />
+                    <input required type="text" name="email" placeholder="Digite seu email" />
+                    <input required type="text" name="subject" placeholder="Qual o assunto" />
+                    <textarea  required name="message" placeholder="Mensagem"></textarea>
                     <button>Enviar Mensagem</button>
                 </form>
             </div>
