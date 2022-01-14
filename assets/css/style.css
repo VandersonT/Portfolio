@@ -374,7 +374,58 @@
 
 /*------------------------------------------------------------------------------------------------------------*/
 
-/*----------------------------------------TestimonialsSection-------------------------------------------------*/
+/*------------------------------------------StepByStepSection-------------------------------------------------*/
+.stepByStepBox{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.stepsBar{
+    width: 100%;
+    height: 7px;
+    background-color: #000000;
+    position: relative;
+    top: 23px;
+    border-radius: 5px;
+}
+
+.barProgress{
+    width: 19%;
+    background-color: rgb(255, 51, 0);
+    height: 100%;
+    border-radius: 5px;
+}
+
+.done{
+    background-color: rgb(255, 51, 0) !important;
+}
+
+.steps{
+    display: flex;
+    justify-content: space-around;
+}
+
+.stepSingle{
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    color: white;
+}
+
+.stepName{
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .contactSection{
     width: 100%;
     padding: 100px 0;
@@ -399,13 +450,14 @@
 }
 
 .social > i:nth-of-type(1){
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 10px;
-    color: rgb(255, 208, 0);
-    background-color: rgba(0, 153, 255, 0.2);
+    color: rgb(255, 255, 255);
+    background-color: rgb(207, 58, 12);
     padding: 10px;
     border-radius: 10px;
 }
+
 
 .social h2{
     margin-bottom: 15px;
@@ -416,7 +468,7 @@
     display: flex;
     background-color: #0c0f16;
     justify-content: space-around;
-    padding: 30px;
+    padding: 45px;
 }
 
 .socialSingleBox a{
@@ -424,17 +476,16 @@
 }
 
 .socialSingleBox i{
-    font-size: 23px;
+    font-size: 20px;
     margin-right: 10px;
-    background-color: rgb(25, 113, 196);
-    padding: 10px;
+    padding: 5px 7px;
     cursor: pointer;
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .socialSingleBox i:hover{
-    background-color: rgb(25, 98, 167);
+    background-color: rgba(9, 121, 226, 0.2);
 }
 
 .formalContact--single{
@@ -442,10 +493,18 @@
     text-align: center;
 }
 
+.formalContact--single a{
+    color: rgb(11, 128, 238);
+}
+
+.formalContact--single a:hover{
+    border-bottom: 1px solid rgb(11, 128, 238);
+}
+
 .formalContact--single i{
     font-size: 25px;
     margin-bottom: 20px;
-    color: rgb(0, 118, 228);
+    color: rgb(177, 177, 177);
 }
 
 .formalContact--single h2{
@@ -461,15 +520,23 @@
     background-color: #0c0f16;
 }
 
+.contact2 h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .contact2 textarea,
 .contact2 input{
-    padding: 10px;
+    padding: 13px 10px;
     margin-bottom: 20px;
     outline: 0;
-    font-size: 17px;
-    border-radius: 6px;
+    font-size: 16px;
+    border-radius: 3px;
     background-color: rgb(233, 233, 233);
     border: 0;
+    text-align: center;
 }
 
 .contact2 textarea{
@@ -492,6 +559,17 @@
 .contact2 button:hover{
     background-color: rgb(207, 91, 13);
     color: rgb(238, 238, 238);
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------Responsive-------------------------------------------------------*/
+footer{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    color: white;
+    background-color: #0c0f16;
 }
 /*------------------------------------------------------------------------------------------------------------*/
 
