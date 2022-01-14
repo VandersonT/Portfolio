@@ -9,7 +9,7 @@ btnMenuMobile.addEventListener('click', function(){
         menuMobile.style.display = 'none';
     }else{
         btnMenuMobile.innerHTML = '<i class="fas fa-times"></i>';
-        menuMobile.style.display = 'block';
+        menuMobile.style.display = 'flex';
     }
     isOpen = !isOpen;
 })
