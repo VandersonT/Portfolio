@@ -375,14 +375,123 @@
 /*------------------------------------------------------------------------------------------------------------*/
 
 /*----------------------------------------TestimonialsSection-------------------------------------------------*/
-.testimonialsSection{
+.contactSection{
     width: 100%;
-    height: 400px;
     padding: 100px 0;
     background-color: #11141b;
 }
-.testimonialsBox{
-    width: 100%;
+.contactBox{
+    display: flex;
+    justify-content: center;
+}
+
+.contact1{
+    width: calc(90% / 2);
+    margin-right: 20px;
+}
+
+.social{
+    background-color: #0c0f16;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.social > i:nth-of-type(1){
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: rgb(255, 208, 0);
+    background-color: rgba(0, 153, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social h2{
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formalContact{
+    display: flex;
+    background-color: #0c0f16;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.socialSingleBox a{
+    color: white;
+}
+
+.socialSingleBox i{
+    font-size: 23px;
+    margin-right: 10px;
+    background-color: rgb(25, 113, 196);
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.socialSingleBox i:hover{
+    background-color: rgb(25, 98, 167);
+}
+
+.formalContact--single{
+    color: white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.formalContact--single i{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: rgb(0, 118, 228);
+}
+
+.formalContact--single h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact2{
+    width: calc(90% / 2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #0c0f16;
+}
+
+.contact2 textarea,
+.contact2 input{
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: 0;
+    font-size: 17px;
+    border-radius: 6px;
+    background-color: rgb(233, 233, 233);
+    border: 0;
+}
+
+.contact2 textarea{
+    height: 100px;
+    resize: none;
+}
+
+.contact2 button{
+    width: 200px;
+    margin:  0 auto;
+    padding: 13px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(224, 99, 15);
+    color: white;
+}
+
+.contact2 button:hover{
+    background-color: rgb(207, 91, 13);
+    color: rgb(238, 238, 238);
 }
 /*------------------------------------------------------------------------------------------------------------*/
 
