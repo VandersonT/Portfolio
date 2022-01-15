@@ -5,7 +5,15 @@
     $message = filter_input(INPUT_POST, 'message');
 
     if($name && $email && $subject && $message){
-        //envia aqui o email quando já estiver online
+
+        $to = 'vandersontpaulo@gmail.com';
+        $subject = $subject;
+        $body = $message;
+        $header = "From: suporte@vandersontiago.com"."\r\n".
+                  "Reply-To: ".$email."\r\n".
+                  "X-Mailer: PHP/".phpversion();
+    
+        mail($to, $subject, $body, $header);      
     }
     
     echo "<script>window.location.href = 'https://vandersontiago.com/';</script>";
