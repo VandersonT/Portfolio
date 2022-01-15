@@ -98,7 +98,7 @@
     height: 100vh;
     background-image: url('../images/banner.jpg');
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-color: #0c0f16;
     display: flex;
     justify-content: center;
@@ -199,6 +199,7 @@
 } 
 
 .aboutMe h2{
+    width: max-content;
     font-family: 'Rubik', sans-serif;
     color: #bfbfc0;
     font-size: 25px;
@@ -208,6 +209,7 @@
 }
 
 .aboutMe h3{
+    width: max-content;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     color: #bfbfc0;
@@ -461,7 +463,6 @@
     border-radius: 10px;
 }
 
-
 .social h2{
     margin-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -565,7 +566,7 @@
 }
 /*------------------------------------------------------------------------------------------------------------*/
 
-/*-------------------------------------------Responsive-------------------------------------------------------*/
+/*---------------------------------------------Footer---------------------------------------------------------*/
 footer{
     width: 100%;
     height: 90px;
@@ -593,6 +594,16 @@ footer{
     .boxInfo .writeSingle{
         font-size: 17px;
     }
+    .boxAboutMe img{
+        width: 400px;
+        height: 321px;
+    }
+    .boxAboutMe p{
+        width: 500px;
+    }
+    .aboutMe{
+        padding-top: 5px;
+    } 
 }
 
 @media screen and (max-width: 1020px) {
@@ -606,9 +617,51 @@ footer{
         justify-content:space-between;
         padding: 0 50px;
     }
+
+    .boxAboutMe{
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxAboutMe img{
+        width: 700px;
+        height: 500px;
+        margin-right: 0;
+    }
+    .aboutMe{
+        width: 700px;
+        padding-top: 30px;
+    }
+    .boxAboutMe p{
+        width: 700px;
+        font-size: 18px;
+    }
+    .contactBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact1{
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .contact2{
+        width: 90%;
+    }
+    .contact2 h3{
+        font-size: 20px;
+    }
+    .contact2 textarea,
+    .contact2 input{
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+    .contact2 textarea{
+        height: 170px;
+    }
 }
 
 @media screen and (max-width: 770px) {
+    .boxInfo h2,
     .boxInfo h1{
         font-size: 25px;
     }
@@ -620,17 +673,43 @@ footer{
         right: 2%;
         bottom: 2%;
     }
+    .boxAboutMe img{
+        width: 90%;
+        height: 450px;
+    }
+    .boxAboutMe p{
+        width: 100%;
+    }
+    .aboutMe{
+        width: 90%;
+    }
+    .serviceSingle{
+        width: 400px;
+    }
+    .portfolioSingle{
+        width: 470px;
+        height: 400px;
+    }
+    .portfolioSingle .openProject{
+        height: 50px;
+        line-height: 50px;
+    }
+    .technologySingle img{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media screen and (max-width: 590px) {
     .boxInfo{
         left: 0;
     }
+    .boxInfo h2,
     .boxInfo h1{
         font-size: 20px;
     }
-    .boxInfo .writeSingle{
-        font-size: 12px;
+    .boxInfo .writeSingle i{
+        font-size: 18px;
     }
     .boxMenu{
         padding: 0 30px;
@@ -646,44 +725,108 @@ footer{
     .menuMobile a{
         font-size: 19px;
     }
-    
+    .boxAboutMe img{
+        height: 380px;
+    }
     .boxAbout p{
         letter-spacing: 1px;
     }
-    .projectSingle{
-        width: 370px;
+    .portfolioSingle{
+        width: 90%;
     }
-    .projectSingle p{
-        font-size: 14px;
+    .stepByStepBox{
+        width: 90%;
+    }
+    .formalContact{
+        flex-direction: column;
+    }
+    .formalContact--single:nth-of-type(1){
+        margin-bottom: 50px;
+    }
+    .contact2 h3{
+        margin-bottom: 35px;
+    }
+    .contact2 textarea,
+    .contact2 input{
+        padding: 15px 10px;
+        font-size: 18px;
+    }
+    .contact2 textarea{
+        height: 120px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .boxInfo h1{
-        font-size: 20px;
+    .sectionTitle{
+        font-size: 32px;
     }
-    .boxInfo .writeSingle{
-        font-size: 12px;
-        color: #005be4;
+    .boxInfo h2,
+    .boxInfo h1{
+        font-size: 17px;
+    }
+    .boxInfo .writeSingle i{
+        font-size: 14px;
+    }
+    .boxAboutMe img{
+        width: 95%;
+        height: 360px;
+    }
+    .aboutMe{
+        width: 95%;
+    }
+    .technologySingle img{
+        width: 40px;
+        height: 40px;
+    }
+    .portfolioSingle{
+        width: 85%;
+        height: 400px;
+    }
+    .boxPortfolio{
+        width: 100%;
+    }
+    .contact1{
+        width: 95%;
+    }
+    .contact2{
+        width: 95%;
+        padding: 20px 10px;
     }
 }
 
 @media screen and (max-width: 390px) {
+    .boxInfo h2,
     .boxInfo h1{
         font-size: 15px;
     }
-    .boxInfo .writeSingle{
-        font-size: 10px;
-        margin-bottom: 20px;
+    .boxInfo .writeSingle i{
+        font-size: 12px;
+    }
+    .boxAboutMe img{
+        height: 280px;
+    }
+    .aboutMe h2{
+        font-size: 22px;
+    }
+    .aboutMe h3{
+        font-size: 14px;
+    }
+    .portfolioSingle{
+        height: 320px;
+    }
+    .serviceSingle{
+        width: 90%;
+    }
+    .boxServices{
+        padding: 0;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 300px) {
+    .boxInfo h2,
     .boxInfo h1{
         font-size: 12px;
-    }
-    .boxInfo .writeSingle{
-        font-size: 8px;
     }
 }
 /*------------------------------------------------------------------------------------------------------------*/

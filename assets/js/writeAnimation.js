@@ -1,6 +1,6 @@
 /*-------------------------------------phrases to display-------------------------------------------------*/
 let phases = [
-    'Desenvolvedor Web',
+    'Desenvolvedor Freelancer',
     'Desenvolvedor FullStack',
     'Programador PHP'
 ];
