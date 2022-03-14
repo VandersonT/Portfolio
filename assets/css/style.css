@@ -75,7 +75,7 @@
     height: 100vh;
     background-color: rgba(0, 5, 20, 0.9);
     flex-direction: column;
-    padding-top: 40%;
+    justify-content: center;
     align-items: center;
 }
 
@@ -240,18 +240,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 5px;
     color: rgb(148, 148, 148);
     border-bottom: 2px solid transparent;
 }
 
 .technologySingle p:nth-of-type(1){
     padding: 2px 15px;
+    font-size: 14px;
 }
 
 .technologySingle img{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 5px;
 }
 
 .borderBottomAnimation{
@@ -343,8 +345,8 @@
     justify-content: center;
 }
 .portfolioSingle{
-    width: 360px;
-    height: 380px;
+    width: 320px;
+    height: 320px;
     margin: 20px;
     border-radius: 3px;
     color: white;
@@ -409,7 +411,8 @@
 
 .steps{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 70px;
 }
 
 .stepSingle{
@@ -579,6 +582,7 @@ footer{
 /*------------------------------------------------------------------------------------------------------------*/
 
 .goTop{
+    display: none;
     font-size: 50px;
     color: rgb(0, 89, 255);
     position: fixed;
@@ -798,6 +802,10 @@ footer{
     }
     .boxAboutMe p{
         font-size: 14px;
+    }
+
+    .steps{
+        padding-left: 50px;
     }
 }
 
